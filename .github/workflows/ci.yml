@@ -1,6 +1,8 @@
 name: CI Build
 run-name: ${{ github.actor }} is building SoundFont Godot extension 🚀
-on: [push]
+on: 
+  push:
+  workflow_dispatch:
 jobs:
   build:
     name: ${{ matrix.name }}
